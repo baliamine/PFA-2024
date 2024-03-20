@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+/* css title */
+.title-section {
+  color: #131022;
+  font-size: 30px;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+/* css  introduction-section */
+.introduction-section {
+  color: #9397ad !important;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 30px;
+  line-height: 1.5;
+  font-size: 1rem !important;
+}
+/* css btn */
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #101629;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #008dda;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: white;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #008dda;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.title-content {
+  font-family: "Roboto", sans-serif;
+  color: #131022;
+  font-size: 30px;
+  color: white;
+  background-color: #008dda;
+  padding: 15px;
+  margin-top: 150px;
+  padding-left: 100px;
+}
+.evnt-img {
+  max-width: 50%;
+  max-height: auto;
+  height: auto;
+  margin-right: 80px;
+  border-radius: 10px;
+}
+
+.container-realisation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.check-circle {
+  width: 15px;
+}
+.content-description {
+  color: #9397ad;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.content-text{
+    width: 60%;
+}
+.nos-realisation{
+    display: flex;
+flex-direction: column;
+}
+.reversed-img{
+    margin-right: 0;
+}
