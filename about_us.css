@@ -76,6 +76,7 @@
   justify-content: center;
   margin-top: 50px;
 }
+/* section de .nos-realisation */
 .title-content {
   font-family: "Roboto", sans-serif;
   color: #131022;
@@ -122,3 +123,37 @@ flex-direction: column;
 .reversed-img{
     margin-right: 0;
 }
+
+
+/* section de certif  */
+
+.container-certificat{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  width:90%;
+  margin-left: 50px;
+
+}
+/* img  */
+.certificat{
+  width: 120px;
+  padding-bottom: 10px;
+
+}
+
+.certifcats-content{
+ text-align: center;
+ width: 200px;
+
+ 
+}
+.certifcats-content:hover{
+  cursor: pointer;
+  color: #008dda;
+  border-style: outset;
+  border-color: #008dda;
+  
+ 
+}
+
