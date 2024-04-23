@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/nav.css">
     <title>Contact us</title>
     <link rel="stylesheet" href="css/contact_us.css" />
     <script>
-      window.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener("DOMContentLoaded", function () {
         // Sélectionner le formulaire
-        const form = document.querySelector('form');
+        const form = document.querySelector("form");
 
         // Fonction de validation du formulaire
         function validateForm(event) {
@@ -17,49 +18,73 @@
 
           // Sélectionner les champs du formulaire
           const nameInput = document.querySelector('input[name="name"]');
-          const lastNameInput = document.querySelector('input[name="last_name"]');
+          const lastNameInput = document.querySelector(
+            'input[name="last_name"]'
+          );
           const emailInput = document.querySelector('input[name="email"]');
           const messageInput = document.querySelector('input[name="message"]');
 
           // Valider chaque champ
-          if (nameInput.value === '') {
-            alert('Please enter your name');
+          if (nameInput.value === "") {
+            alert("Please enter your name");
             nameInput.focus();
             return false;
           }
 
-          if (lastNameInput.value === '') {
-            alert('Please enter your last name');
+          if (lastNameInput.value === "") {
+            alert("Please enter your last name");
             lastNameInput.focus();
             return false;
           }
 
-          if (emailInput.value === '' || !emailInput.value.includes('@')) {
-            alert('Please enter a valid email address');
+          if (emailInput.value === "" || !emailInput.value.includes("@")) {
+            alert("Please enter a valid email address");
             emailInput.focus();
             return false;
           }
 
-          if (messageInput.value === '') {
-            alert('Please enter a message');
+          if (messageInput.value === "") {
+            alert("Please enter a message");
             messageInput.focus();
             return false;
           }
 
           // Si tout est valide, soumettre le formulaire
-          alert('Form submitted successfully!');
+          alert("Form submitted successfully!");
           form.submit();
         }
 
         // Écouter l'événement de soumission du formulaire
-        form.addEventListener('submit', validateForm);
+        form.addEventListener("submit", validateForm);
       });
     </script>
   </head>
   <body>
-    <nav>
-      <!-- navbar  -->
-    </nav>
+    <header>
+      <nav id="navbar">
+        <img src="img/logo.png" alt="none" class="logo" />
+        <ul>
+          <li>
+            <a href="/home.html">Home</a>
+          </li>
+          <li>
+            <a href="/about_us.html">About us</a>
+          </li>
+          <li>
+            <a href="home.html#card_part">Select Event</a>
+          </li>
+          <li>
+            <a href="#">Add Event</a>
+          </li>
+          <li>
+            <a href="/contact_us.html">Contact</a>
+          </li>
+          <li>
+            <a href="#">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section>
       <div class="section-content">
         <div class="head-section">
@@ -67,7 +92,7 @@
 
           <p class="intro-section">
             Need to get in touch with us? Either fill out the form your inquiry
-            or find the <a href="">EventFusion email</a> you'd like to contact
+            or find the <a href="" class="email">EventFusion email</a> you'd like to contact
             below
           </p>
         </div>
@@ -76,23 +101,23 @@
           <div class="name-last_name">
             <div class="from-part">
               <label class="title">Name</label>
-              <input type="text" name="name" />
+              <input type="text" name="name" id="name" />
             </div>
 
             <div class="from-part">
               <label class="title">Last name</label>
-              <input type="text" name="last_name" />
+              <input type="text" name="last_name" id="last_name" />
             </div>
           </div>
 
           <div class="from-part">
             <label class="title">Email</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" id="email" />
           </div>
 
           <div class="from-part">
             <label class="title">What can we help you with?</label>
-            <input type="chat" name="message" />
+            <input type="chat" name="message" id="message" />
           </div>
 
           <button type="submit">Submit</button>

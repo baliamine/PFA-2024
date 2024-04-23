@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    font-family:sans-serif;
+    text-shadow: 1px 0.5px 1px gray;
+    background-color: #666CC2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+    margin: 0;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: sans-serif;
+    text-shadow: 1px 0.5px 1px gray;
+    background-color: #8083a6;
+    color: #030303;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+}
+
+/* Offers Section Styles */
+.matches {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Offer Styles */
+.sport {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height:fit-content;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sport:hover{
+    transform: scale(1.1);
+}
+
+.sport img {
+    width: 260px;
+    height:275px;
+    border-radius: 8px;
+}
+
+.sport h2 {
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: #4d1818;
+}
+.sport h4{
+    font-family: sans-serif;
+    color:#2a2f49;
+}
+.sport p {
+    margin: 10px 0;
+}
+
+.sport button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.sport button:hover{
+    transition: .6s;
+    transform: scale(1.1) ;
+}
+.sport a {
+    text-decoration: none;
+    color:#fff;
+}

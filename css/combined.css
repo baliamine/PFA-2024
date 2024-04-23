@@ -1,0 +1,120 @@
+/* Réinitialisation CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles du corps */
+body {
+  font-family: Arial, sans-serif;
+  color: #030303;
+}
+
+/* Styles de l'en-tête */
+.head{
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+
+}
+
+/* Styles des titres */
+h1 {
+  margin: 0;
+}
+
+/* Styles de la barre de recherche */
+.search-bar {
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Espacement à droite */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles du contenu principal */
+main {
+  padding: 20px;
+}
+
+/* Styles communs pour les événements */
+.event {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  flex: 1;
+  margin-bottom: 20px;
+  display: flex; /* Ajout pour aligner les éléments */
+  flex-direction: column; /* Ajout pour aligner les éléments */
+}
+
+.event-item:hover {
+  transform: scale(1.05);
+}
+
+.event-item img {
+  width:100%;
+  height: 300px;
+  border-radius: 8px;
+
+}
+
+.event-item h2,
+.event-item h4 {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.event-item p {
+  margin: 10px 0;
+  color: #9397ad;
+}
+
+.event-item button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto; /* Ajout pour aligner le bouton en bas */
+  align-self: center; /* Ajout pour aligner le bouton au centre */
+}
+
+.event-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.event-item button:hover {
+  transform: scale(1.1);
+}

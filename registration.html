@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/styleReg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register Now</h1>
+        <form action="Success.html" method="post">
+            <div class="form-group">
+                <label for="event">Select an event:</label>
+                <select id="event" name="event" required>
+                    <option value="" disabled selected>Event selection</option>
+                    <optgroup label="Camping">
+                        <option value="Jcamp">Jcamp</option>
+                        <option value="Bencamp">Bencamp</option>
+                        <option value="Aincamp">Aincamp</option>
+                    </optgroup>
+                    <optgroup label="Sport">
+                        <option value="Basketball match">Basketball match</option>
+                        <option value="Football match">Football match</option>
+                        <option value="Volleyball match">Volleyball match</option>
+                    </optgroup>
+                    <optgroup label="Night Club">
+                        <option value="KOSMOS">KOSMOS</option>
+                        <option value="Tunight">Tunight</option>
+                        <option value="Oulala Party">Oulala Party</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">WhatsApp phone number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+        
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
