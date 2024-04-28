@@ -1,47 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c0daf3;
     text-align: center;
-}
-
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
+    background-image: url("https://i.ibb.co/SnJ9qtY/bg.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Ajout pour enlever le scroll */
+    display: flex; /* Utilisation de flexbox pour centrer */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    min-height: 100vh; /* Pour occuper au moins toute la hauteur de la fenêtre */
+  }
+  
+  .container {
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
     color: #333;
-}
-
-.form-group {
     margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    padding: 10px;
+  }
+  
+  label {
     color: #333;
-}
-
-input,
-select,
-textarea {
-    width: calc(100% - 22px);
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-button {
+  }
+  
+  button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -49,8 +60,13 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: #0056b3;
-}
+  }
+  
+  .btn {
+    margin-top: 20px;
+  }
+  

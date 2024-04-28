@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
@@ -16,12 +16,12 @@ body {
 
 .message {
     font-size: 24px;
-    color: #333;
     padding: 20px;
-    background-color: #c2a2ea;
+    background-color: #56D8DE;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    color: #f2f2f2;
 }
 
 .message:hover {
